@@ -1,0 +1,17 @@
+.pts_anim-canvas {
+  /* height: 100vh;
+  overflow: hidden; */
+}
+
+.pts_anim {
+  height: 100vh;
+  overflow: hidden;  
+}
+
+.linkTree {
+  /* center link tree horizontally and vertically */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); 
+}
