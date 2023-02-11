@@ -1,0 +1,13 @@
+.typer-wrapper {
+    position: fixed;
+    width: 100%;
+    top: 70px;
+    text-align: center;
+  }
+  
+  .react-typeout {
+    left: 50px;
+    font-size: 2em;
+    font-weight: bold;
+    color: #ffffff;
+  }
