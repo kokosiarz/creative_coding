@@ -2,3 +2,9 @@
      width: 100vw !important;
      height: 100vh !important;
  }
+
+ input {
+    position: absolute;
+    bottom: 15vh;
+    transform: translateX(-50%);
+ }
