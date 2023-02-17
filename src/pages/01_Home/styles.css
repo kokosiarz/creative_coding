@@ -1,14 +1,25 @@
-.typer-wrapper {
-    position: fixed;
-    width: 100%;
-    height: 100%;
-    text-align: center;
-  }
-  
-  .react-typeout {
-    left: 50px;
-    top: 50%;
-    font-size: 2em;
-    font-weight: bold;
-    color: #ffffff;
-  }
+/* .typer-wrapper {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+} */
+
+.react-typeout {
+  position: fixed;
+  /* left: 20vh; */
+  padding: 30px;
+  top: 10vh;
+  /* left: 50%;
+  transform: translate(-50%, -50%); */
+  font-size: 2em;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+.greetingContainer {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+}

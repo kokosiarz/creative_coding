@@ -1,19 +1,13 @@
 import './styles.css';
 import TypeOut from 'react-typeout';
-import { useEffect } from 'react';
-import {  useNavigate } from "react-router-dom";
-import  NextPageHandler from '../../utils/NextPageHandler';
+import  ForwardNavigator from '../../utils/ForwardNavigator';
 
 const Spiral = () => {
-  const words = ["Hello, stranger", "press space to continue..."];
-  // const navigate = useNavigate();
-  // useEffect(() => {
-  //   document.addEventListener("keydown", (e) => { navigate('/spiral') });
-  // }, []);
+  const words = ["","Hello, stranger", "to navigate forward", "press SPACEBAR"];
   return (
-    <div>
+    <div className='greetingContainer'>
       <TypeOut words={words} />
-      <NextPageHandler nextPageUrl='/spiral' />
+      <ForwardNavigator url='/spiral' />
     </div>
   );
 }
