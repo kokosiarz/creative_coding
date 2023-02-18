@@ -22,17 +22,20 @@ const sketch = ( parentId ) => ( s ) => {
   , []);
   let rotation = 0;
   const rotationSpeed = 0.005;
+  // const solid = params && params.solid
 
   s.draw = () => {
     let h = Math.min(s.width, s.height);
     s.background(30);
     s.translate(s.width/2, s.height/2);
     let r = s.height/200;
-    for (let a=rotation; a<s.TWO_PI*30+rotation; a+=0.0005*s.height/200) {
+    for (let a=rotation; a<s.TWO_PI*30+rotation; a+=0.0005*h/200) {
       r=r + (0.005*h)/500
       let x = r*s.cos(a);
       let y = r*s.sin(a);
-      if (binarySos[Math.floor(-2*r*r/30 - rotation*110) % binarySos.length] === 1) {
+      if (window.solidSpiral && Math.random() < 0.05) {
+        s.point(x, y); 
+      } else if (binarySos[Math.floor(-2*r*r/30 - rotation*110) % binarySos.length] === 1) {
         s.point(x, y);      
       }
     }
