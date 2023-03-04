@@ -1,0 +1,47 @@
+ #defaultCanvas0 {
+     width: 100vw !important;
+     height: 100vh !important;
+ }
+
+ body {
+    background-color: #1e1e1e;
+    overflow-x: hidden;
+ }
+
+ .answer {
+    position: absolute;
+    bottom: 10vh;
+    transform: translateX(-50%);
+    left: 50%;
+ }
+
+.popup {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    padding: 20px;
+    max-width: 80vw;
+    max-height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.hint {
+    /* position: absolute; */
+    bottom: 0;
+    right: 0;
+    font-size: 0.5em;
+}
+
+.whatemi {
+    width: 100%;
+    color: #fff;
+    position: absolute;
+    top: 4vh;
+    left: 0;
+    font-size: 8vh;
+}

@@ -1,6 +1,8 @@
-import Spiral from './pages/02_Spiral';
-import Home from './pages/01_Home';
-import Prize from './pages/03_Prize';
+import Spiral from './pages/01_Spiral';
+import Helpme from './pages/Helpme';
+import Home from './pages/Home';
+import Prize from './pages/Prize';
+import PolarPerlin from './pages/02_PolarPerlin';
 import './App.css'
 import {
   createBrowserRouter,
@@ -12,6 +14,14 @@ const router = createBrowserRouter([
   {
     path: "/",
     element: <Home />,
+  },
+  {
+    path: "/perlin",
+    element: <PolarPerlin />,
+  },
+  {
+    path: "/helpme",
+    element: <Helpme />,
   },
   {
     path: "/hector",

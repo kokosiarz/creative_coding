@@ -1,0 +1,24 @@
+/* .typer-wrapper {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+} */
+
+.react-typeout {
+  position: fixed;
+  /* left: 20vh; */
+  padding: 30px;
+  top: 10vh;
+  /* left: 50%;
+  transform: translate(-50%, -50%); */
+  font-size: 2em;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+.prize {
+  padding: 40px;
+  color: #ffffff;
+  font-family: Courier New,Courier,Lucida Sans Typewriter,Lucida Typewriter,monospace; 
+}
