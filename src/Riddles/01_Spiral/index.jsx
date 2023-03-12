@@ -8,8 +8,10 @@ import sound from "./acna_malas.mp3";
 import image from "../../bin/whereami.jpg"
 import secrets from '../../secrets';
 import AnswerField from '../../components/AnswerField';
+import PropTypes from 'prop-types';
 
-const Spiral = () => {
+
+const Spiral = ({ next }) => {
   const navigate = useNavigate();
   const [showSalamanca, setShowSalamanca] = useState("");    
   const words = ["         ", "Miles to go", "before I sleep", "you've let me down", "no reason for me to stay here"];
@@ -23,7 +25,8 @@ const Spiral = () => {
     "HELP": "Look up. Or down. Or left. Or right. Or anywhere",
     "MILES": "Don't trust headlines. BIG LETTERS rarely tell the truth",
     "STAR": () => window.solidSpiral = true,
-    "SALAMANCA": () => navigate('/prize'),
+    "SALAMANCA": "Yeah, but I guess you forgot something",
+    "XSALAMANCAX": () => navigate(`/${next}`),
     "STARSPIRAL": () => setShowSalamanca(true),
     "STAR SPIRAL": () => setShowSalamanca(true),
   }
@@ -41,6 +44,10 @@ const Spiral = () => {
       <div className="hint">What is this? ...starsomething?</div>
     </div>
   );
+}
+
+Spiral.propTypes = {
+  next: PropTypes.string.isRequired,
 }
 
 export default Spiral;

@@ -4,18 +4,14 @@ import starSpiral from '../../p5js/08_Polar_perlin/sketch.js'
 import P5Wrap from '../../components/p5wrap';
 import secrets from '../../secrets';
 import AnswerField from '../../components/AnswerField';
+import PropTypes from 'prop-types';
 
-const Spiral = () => {
+const PolarPerlin = ({ next }) => {
   const navigate = useNavigate();
   const effectMatrix = {
-    "SOS": "I am not that simple",
-    "S.O.S": "I this some kind of code?",
-    "SPACE": "Space is for astronauts",
-    "SPIRAL": "Spiral? What spiral? Spiral is not enough",
-    "GALA": "Galaxy? What is it with you and galaxies?",
-    "HELP": "Look up. Or down. Or left. Or right. Or anywhere",
-    "MILES": "Don't trust headlines. BIG LETTERS rarely tell the truth",
-    "ZERO": () => navigate('/hector'),
+    "0": "",
+    "HELP": "Yes yes. Help me!",
+    "NUMBER": () => navigate(`/${next}`),
   }
 
   return (
@@ -27,4 +23,8 @@ const Spiral = () => {
   );
 }
 
-export default Spiral;
+PolarPerlin.propTypes = {
+  next: PropTypes.string.isRequired,
+}
+
+export default PolarPerlin;

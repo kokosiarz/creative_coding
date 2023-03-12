@@ -1,11 +1,8 @@
 import './styles.css';
 
-// import TypeOut from 'react-typeout';
-// import { useState } from 'react';
-// // import  ForwardNavigator from '../../utils/ForwardNavigator';
-// import { useNavigate } from 'react-router-dom';
+import PropTypes from 'prop-types';
 
-const Spiral = () => {
+const Helpme = () => {
   return (
     <div className='prize'>
       <br/>
@@ -32,12 +29,15 @@ const Spiral = () => {
       <br/>
       Or do, if you feel like it<br/>
       <br/>
-      <a href="/">Go back</a>
+      <a href={`/`}>Go back</a>
     </div>
     
   );
 }
 
+Helpme.propTypes = {
+  next: PropTypes.string.isRequired,
+}
 
 
-export default Spiral;
+export default Helpme;
